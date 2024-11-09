@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div>
+        <h1>Dynamic ATS Friendly Resume Builder By Basel Hussain</h1>
+        <form id="form">
+            <!-- Form fields here -->
+            <div class="container">
+                <div>
+                    <h2>Complete your resume heading</h2>
+                    <p>Employers will use this information to contact you.</p>
+                </div>
+               
+                <div class="name">
+                    <div>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" class="names" required><br>
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" class="names" required><br>
+                    </div>
+                </div>
+
+
+                <div class="email-phone">
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" id="email" class="emailphone" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="number" id="number" class="emailphone" required><br>
+                    </div>
+                </div>
+                <div class="llink-glink">
+                    <div>
+                        <label for="linkedIn">LinkedIn Profile Link:</label>
+                        <input type="text" name="llink" id="llink" class="links" >
+                    </div>
+                    <div>
+                        <label for="Github">Github Profile Link:</label>
+                        <input type="text" name="glink" id="glink" class="links" ><br>
+                    </div>
+                </div>
+
+                <div class="summary">
+                    <label for="education">Summary:</label>
+                    <textarea name="summary" id="summary" rows="4" required
+                        placeholder="Briefly describe yourself"></textarea>
+                </div>
+
+                <!-- Education Section -->
+                 
+<div class="educationField">
+    <h2>Education</h2>
+    <p>Add information about your educational background</p>
+    <div class="institute-city">
+        <div>
+            <label for="institute">Institute Name:</label>
+            <input type="text" name="institute" id="institute" class="institutecity" placeholder="e.g. Harvard University" >
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" class="institutecity" placeholder="e.g. San Francisco" ><br>
+        </div>
+    </div>
+    <div class="field-degree">
+        <div>
+            <label for="field">Field of study:</label>
+            <input type="text" name="field" id="field" class="fielddegree" placeholder="e.g. Engineering" >
+        </div>
+        <div>
+            <div class="degree-dropdown">
+                <label for="degree">Degree Level:</label>
+                <select name="degree" id="degree" class="degree" >
+                    <option value="" disabled selected>Select your degree</option>
+                    <option value="highschool"> Diploma Certificate</option>
+                    <option value="associate">Associate Degree</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="doctorate">Doctorate Degree</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="date">Graduation date</label>
+            <input type="date" name="date" id="date" >
+        </div>
+    </div>
+</div>
+<hr>
+<h3>(Optional)</h3>
+<div class="educationField">
+    
+    <div class="institute-city">
+        <div>
+            <label for="institute">Institute Name:</label>
+            <input type="text" name="institute" id="institute2" class="institutecity" placeholder="e.g. Harvard University" >
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city2" class="institutecity" placeholder="e.g. San Francisco" ><br>
+        </div>
+    </div>
+    <div class="field-degree">
+        <div>
+            <label for="field">Field of study:</label>
+            <input type="text" name="field" id="field2" class="fielddegree" placeholder="e.g. Engineering" >
+        </div>
+        <div>
+            <div class="degree-dropdown">
+                <label for="degree">Degree Level:</label>
+                <select name="degree" id="degree2" class="degree" >
+                    <option value="" disabled selected>Select your degree</option>
+                    <option value="highschool"> Diploma  Certificate</option>
+                    <option value="associate">Associate Degree</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="doctorate">Doctorate Degree</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <label for="date">Graduation date</label>
+            <input type="date" name="date" id="date2" >
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Experience Section -->
+
+
+    <div class="workExperienceField">
+        <h2>Work Experience</h2>
+        <p>List your work experience, from the most recent to the oldest. Feel free to use our pre-written examples.</p>
+        <div class="employer-job">
+            <div>
+                <label for="employer">Employer:</label>
+                <input type="text" name="employer" id="employer" class="employerjob" placeholder="e.g. IBM" >
+            </div>
+            <div>
+                <label for="job">Job:</label>
+                <input type="text" name="job" id="job" class="employerjob" placeholder="e.g. Engineer" ><br>
+            </div>
+        </div>
+        <div class="city-state">
+            <div>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city3" class="citystate" placeholder="e.g. San francisco" >
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" class="citystate" placeholder="e.g. California" >
+            </div>
+        </div>
+        <div class="start-end">
+        <div>
+            <label for="date">Start date</label>
+            <input type="date" name="date" id="startdate" class="startend">
+        </div>
+        <div>
+            <label for="date">End date</label>
+            <input type="date" name="date" id="enddate" class="startend">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    </div>
+    <h3>(Optional)</h3>
+    <div class="workExperienceField">
+        <div class="employer-job">
+            <div>
+                <label for="employer">Employer:</label>
+                <input type="text" name="employer" id="employer2" class="employerjob" placeholder="e.g. IBM" >
+            </div>
+            <div>
+                <label for="job">Job:</label>
+                <input type="text" name="job" id="job2" class="employerjob" placeholder="e.g. Engineer" ><br>
+            </div>
+        </div>
+        <div class="city-state">
+            <div>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city3-2" class="citystate" placeholder="e.g. San francisco" >
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state2" class="citystate" placeholder="e.g. California" >
+            </div>
+        </div>
+        <div class="start-end">
+        <div>
+            <label for="date">Start date</label>
+            <input type="date" name="date" id="startdate2" class="startend">
+        </div>
+        <div>
+            <label for="date">End date</label>
+            <input type="date" name="date" id="enddate2" class="startend">
+        </div>
+    </div>
+    
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h3>(Optional)</h3>
+    <div class="workExperienceField">
+        <div class="employer-job">
+            <div>
+                <label for="employer">Employer:</label>
+                <input type="text" name="employer" id="employer3" class="employerjob" placeholder="e.g. IBM" >
+            </div>
+            <div>
+                <label for="job">Job:</label>
+                <input type="text" name="job" id="job3" class="employerjob" placeholder="e.g. Engineer" ><br>
+            </div>
+        </div>
+        <div class="city-state">
+            <div>
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city3-3" class="citystate" placeholder="e.g. San francisco" >
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state3" class="citystate" placeholder="e.g. California" >
+            </div>
+        </div>
+        <div class="start-end">
+        <div>
+            <label for="date">Start date</label>
+            <input type="date" name="date" id="startdate3" class="startend">
+        </div>
+        <div>
+            <label for="date">End date</label>
+            <input type="date" name="date" id="enddate3" class="startend">
+        </div>
+    </div>
+    
+    </div>
+    <div class="skillsField">
+        <h2>Skills</h2>
+        <p>Highlight 6-8 of your top skills.</p>
+        <label for="skills">Your Skills (comma separated):</label>
+        <textarea name="skills" id="skills" rows="4" required></textarea>
+       
+    </div>
+    <div class="button-div">
+        <button type="submit">Generate My Resume</button>
+    </div>
+    </div>
+    </form>
+
+    <div id="output" style="display:none;">
+        <!-- Resume content will be generated here -->
+    </div>
+    <div class="maineditsavediv">
+        <div id="edit-save-buttons" style="display:none;">
+            <button id="editResume">Edit Resume</button>
+            <button id="saveResume" style="display:none;">Save Resume</button>
+            <button id="download" >Download Resume</button>
+        </div>
+        
+    </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

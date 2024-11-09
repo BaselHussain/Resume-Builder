@@ -1,0 +1,221 @@
+body{
+    background-color: #d1dee0;
+    color: black;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    margin-left: 2.5rem;
+    
+    align-items: center;
+    
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+}
+p{
+    font-weight: 400;
+    font-size: small;
+    
+}
+.name{
+    display: flex;
+    gap: 30px;  
+}
+
+.email-phone{
+    display:flex;
+    gap: 30px;
+}
+
+h2{
+    font-weight: 900;
+    font-size:x-large;
+    
+}
+label{
+    font-weight: 600;
+    display: block;
+    
+}
+
+input,textarea{
+    background-color: #f0e9e9;
+    border: 0;
+    padding: 8px;
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 10px;
+    resize: none;
+}
+input:focus,textarea:focus{
+    outline: 0;
+    border-bottom: 2px solid #1A91F0
+}
+button{
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #0080FF;
+    text-align: center;
+    width: 50%;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 5px;
+    
+}
+button:hover{
+    transform: translateY(-5px);
+    background-color: #2f73b8;
+    
+}
+.names{
+    width: 465px;
+}
+.emailphone{
+    width: 465px;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+
+#output{
+max-width: 750px;
+height: 770px;
+margin: 40px auto;
+padding: 30px;
+border: 2px solid black;
+background-color: #fff;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 1);
+display: none;
+}
+#output h2{
+    color: black
+}
+
+.maineditsavediv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for edit/save buttons visibility */
+#edit-save-buttons {
+    
+padding: 0px 100px;
+display: flex;
+
+}
+
+.section-edit {
+    display: none; /* Initially hidden */
+}
+.mainedisavediv{
+    display: flex;
+    justify-content: center;
+}
+.institute-city,.employer-job,.city-state,.start-end,.field-degree,.llink-glink{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .institutecity,.employerjob,.citystate,.startend,.links{
+    width: 465px;;
+  }
+  .fielddegree{
+   width: 465px;
+  }
+ 
+  .degree{
+    padding: 10px;
+    width: 250px;
+  }
+  #field-degree-output,  #field-degree-output2,#job-employer-output,#job-employer-output2,#job-employer-output3{
+    display: flex;
+   justify-content: space-between;
+  }
+
+#output{
+    flex-direction: column;
+    height: fit-content;
+    
+}
+
+  h2.name{
+    justify-content: center;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+  }
+  p.phone-email{
+    justify-content: center;
+    margin: auto;
+  }
+  
+  div.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: -20px;
+  }
+
+  #resumeContainer{
+    color:black;
+   
+    }
+
+    
+
+@media (max-width: 766px) {
+    .email-phone,.name,.institute-city,.field-degree,.employer-job,.city-state,.start-end,.llink-glink {
+      display: inline;
+    }
+    input,textarea{
+        width: 350px;
+        
+    
+display: inline;
+    }
+    .emailphone,.names,.institutecity,.fielddegree,.employerjob,.citystate,.links{
+        width: 350px;
+    }
+
+    .startend,#date,#date2{
+        width: 250px;
+    }
+    
+      .container{
+        margin-left: 0.5rem;
+      }
+
+        #edit-save-buttons {
+            /* margin-top: 20px; */
+            width: 100%;
+        }
+        #output{
+            width: 500px;
+            width:fit-content(500px)
+            
+        }
+
+       
+        h2.name{
+           margin: auto;
+        }
+       
+#download,#editResume,#saveResume{
+    width: 150px;
+}
+  }
+
+
+ 
+
+  
